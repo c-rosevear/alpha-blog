@@ -1,7 +1,10 @@
 == README
 
 This app is for the Complete Ruby on Rails Developer app.  
+<<<<<<< HEAD
 
+=======
+>>>>>>> 82b33278fb78d9a07d25b96c9352141be8641087
 Things you may want to cover:
 
 * Ruby version
