@@ -57,7 +57,7 @@ h1, h3 {
 
 p { }
 
-a {
+a.button {
     z-index:999;
     margin: 20px auto;
     background-color: black;
