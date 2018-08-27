@@ -47,10 +47,22 @@ $navbar-default-bg: #066089;
 .description { 
     margin-top: 0;
 }
+
 .article-actions {
     border-top: 2px sold #eaeaea;
     padding-top: 5px;
 }
+
+.article-title {
+    font-weight: bold;
+    font-size:1.5em;
+}
+
+.article-body{
+    border-top:1px sold #eaeaea;
+    padding: 115px auto;
+}
+
 
 footer{ 
     margin-top:45px;
