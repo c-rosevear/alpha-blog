@@ -1,44 +1,4 @@
 
-<h1>Signup</h1>
+<h1 class="text-center">Signup</h1>
 
-<%= render 'shared/errors', obj: @user %>
-
-<div class="container">
-<div class="row">
-    <div class="col-sm-12">
-        <%= form_for(@user, :html => { class: "form-horizontal", role: "form"}) do |f| %>
-            <div class="form-group">
-                <label  class="col-sm-2 control-label">
-                    <%= f.label :username %> 
-                </label>
-                <div class="col-xs-12 col-sm-8 col-md-6">
-                    <%= f.text_field :username, :class=>"form-control", :placeholder=>"Enter username" %>
-                </div>    
-            </div>
-             <div class="form-group">
-                <label  class="col-sm-2 control-label">
-                    <%= f.label :email %>
-                </label>
-                <div class="col-sm-8">
-                     <%= f.email_field :email, :class=>"form-control", :placeholder=>"Enter Email" %>
-              </div>
-              </div>
-
-             <div class="form-group">
-                <label  class="col-sm-2 control-label">
-                    <%= f.label :password %>
-                </label>
-                <div class="col-sm-8">
-                     <%= f.password_field :password, :class=>"form-control", :placeholder=>"Enter Password" %>
-              </div>
-              </div>
-
-             <div class="col-sm-offset-2 col-sm-10">
-                <%= f.submit "Signup", class: 'btn btn-primary' %>
-             </div>
-        <% end %>
-         <div class="col-sm-offset-4 col-sm-4 "> 
-            <span class=""> [</span> <%= link_to  "Cancel request and return to articles listing", articles_path %> ]
-        </div>
-   </div> 
-</div>
+<%= render 'form' %>
