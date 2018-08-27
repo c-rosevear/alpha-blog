@@ -1,7 +1,16 @@
-<h1>Show Article</h1>
+<div class="container">
+<h2 class="text-center">Title : <%= @article.title %></h2>
+<div class="well col-sm-offset-2 col-sm-8">
+    <h4 class="text-center description">Description :</h4>
+    <hr>
+     <%= simple_format(@article.description) %>
 
-<p>Title : <%= @article.title %></p>
-<p>Description : <%= @article.description %></p>
-
-<%= link_to "Edit", edit_article_path(@article) %> | 
-<%= link_to "Back to acticle listings", articles_path %>
+    <div class="article-actions">
+        <%= link_to "Edit", edit_article_path(@article), class: "btn btn-xs btn-primary" %>  
+        <%= link_to "Delete", article_path(@article), 
+            method: :delete, data: {confirm: "Are you sure?"},  
+            class: "btn btn-xs btn-danger" %>  
+        <%= link_to "Back to acticle listings", articles_path, class: "btn btn-xs btn-success" %>
+    </div>
+</div>
+</div>
