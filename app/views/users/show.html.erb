@@ -5,11 +5,11 @@
         <%= gravatar_for @user, size: 150 %>
     </div>
 </div>
-<h4 class="text-center"><%= @user.username %>' articles</h4>
+<h4 class="text-center"><%= @user.username %>'s articles</h4>
 <div class="text-center">
-    <%= will_paginte @user_articles %>
+    <%= will_paginate @user_articles %>
 </div>    
 <%= render 'articles/articles', obj: @user.articles %>
 <div class="text-center">
-    <%= will_paginte @user_articles %>
+    <%= will_paginate @user_articles %>
 </div>
