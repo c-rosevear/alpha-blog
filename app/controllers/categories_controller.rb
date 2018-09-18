@@ -10,11 +10,11 @@ class CategoriesController < ApplicationController
     end
 
     def edit
-        @category.find(params[:id])
+        @category= Category.find(params[:id])
     end
 
     def update
-        @category.find(params[:id])
+        @category= Category.find(params[:id])
         if @category.update(category_params)
             flash[:success] = "Category was successfully Updated."
             redirect_to category_path(@category)

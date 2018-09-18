@@ -1,4 +1,6 @@
-<h1 class="text-center"><%= " " + @category.name %> </h1>
+<h1 class="text-center"><%= " " + @category.name %>   
+
+<%= link_to "Edit #{@category.name}", edit_category_path(@category), class: "btn btn-xs btn-primary" %> </h1>
  <div class="text-center">
     <%= will_paginate @category_articles %>
 </div>
